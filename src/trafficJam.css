@@ -1,0 +1,71 @@
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: xx-large;
+  margin-bottom: 0px;
+}
+#board {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 665px;
+  width: 100%;
+}
+
+.R,
+.S,
+.L {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+}
+
+.R,
+.L {
+  margin: 2px;
+  background-image: url('../data/brick.png');
+  background-size: 69px 23px;
+  background-repeat: space;
+}
+
+.S {
+  margin: 2px;
+  background-image: url('../data/space.png');
+  background-size: 69px 25px;
+  background-repeat: space;
+}
+
+img {
+  height: 40px;
+  width: auto;
+}
+
+.tower {
+  border: 1px solid rgba(209, 32, 32, 0.5);
+}
+
+.R:hover,
+.S:hover,
+.L:hover {
+  background-color: black;
+}
+
+#msgBox {
+  position: absolute;
+  display: none;
+  margin-left: 530px;
+  font-size: 100px;
+}
+
+#details {
+  display: none;
+}
+
+@keyframes wrongMove {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: red;
+  }
+}

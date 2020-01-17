@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="trafficJam.js"></script>
+    <link rel="stylesheet" href="trafficJam.css" />
     <title>Traffic Jam</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="jam.js"></script>
   </head>
-  <body onload="createTiles()">
-    <div>
-      <h1>Welcome to the Traffic Jam</h1>
+  <body onload="main()">
+    <h1>Welcome to Traffic Jam</h1>
+    <div id="details">
+      <p>game controllers</p>
     </div>
-    <div class="board" id="path" onclick="playerMove(event)" >
-    </div>
+    <button onclick="myDetails()">Help</button>
+    <div id="msgBox">You Won</div>
+    <div id="board"></div>
   </body>
 </html>
