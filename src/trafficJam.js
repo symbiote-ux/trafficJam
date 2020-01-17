@@ -1,4 +1,4 @@
-const noOfLines = prompt('which level you want');
+const noOfLines = prompt('how many tiles you want ..');
 
 const getWinningCom = () => {
   const leftWinningComb = new Array((noOfLines - 1) / 2);
@@ -27,7 +27,7 @@ const displayMsg = () => {
 };
 
 const showInvalidMove = function(nextMove) {
-  nextMove.style.animation = 'wrongMove 2s';
+  nextMove.style.animation = 'wrongMove 2s ';
 };
 
 const swapTiles = (blankTile, nextMove) => {
