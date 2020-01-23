@@ -86,12 +86,12 @@ const createBoard = function(noOfWalls) {
   maxHeight = Math.ceil(noOfWalls / 2);
   for (let i = 1; i < maxHeight; i++) {
     const heightOfWall = i * 5;
-    createWall(heightOfWall, '../data/left.jpg', 'L', id++);
+    createWall(heightOfWall, './data/left.jpg', 'L', id++);
   }
-  createWall(maxHeight * 5, '../data/spaceE.png', 'S', id++);
+  createWall(maxHeight * 5, './data/spaceE.png', 'S', id++);
   for (let i = maxHeight - 1; i >= 1; i--) {
     const heightOfWall = i * 5;
-    createWall(heightOfWall, '../data/cat.png', 'R', id++);
+    createWall(heightOfWall, './data/cat.png', 'R', id++);
   }
 };
 
